@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #303633;
+    color: white;
+}
+
+
+.carrossel {
+    position: relative;
+    max-width: 58%; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.imagens img {
+    width: 100%; /* Imagem ocupa toda a largura do carrossel */
+    height: auto;
+    
+}
+
+button {
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 2em;
+    padding: 10px;
+
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
